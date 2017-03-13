@@ -100,11 +100,14 @@ import org.semanticweb.owlapi.util.mansyntax.ManchesterOWLSyntaxParser;
  */
 public class Dl {
 
-    Dl(OWLOntology ontology) throws OWLOntologyStorageException {
-        try {
+    static String name;
+    DLQueryPrinter dlQueryPrinter;
+
+    Dl(OWLOntology ontology, String name) throws OWLOntologyStorageException {
+        
             // Load an example ontology. In this case, we'll just load the pizza
             // ontology.
-
+            this.name = name;
             System.out.println("Loaded ontology: " + ontology.getOntologyID());
             // We need a reasoner to do our query answering
             OWLReasoner reasoner = createReasoner(ontology);
@@ -112,57 +115,50 @@ public class Dl {
             PelletReasoner pelletReasoner = pelletReasonerFactory.createNonBufferingReasoner(ontology);
             Set<Rule> rules = pelletReasoner.getKB().getRules();
             rules.forEach(r -> System.out.println(r));
-            pelletReasoner.getKB().printClassTree();
+          //  pelletReasoner.getKB().printClassTree();
             pelletReasoner.getKB().realize();
-            pelletReasoner.getKB().printClassTree();
-            
-                    
+           // pelletReasoner.getKB().printClassTree();
+
             InferredOntologyGenerator generator = new InferredOntologyGenerator(reasoner);
             generator.fillOntology(ontology.getOWLOntologyManager().getOWLDataFactory(), ontology);
             ontology.getOWLOntologyManager().saveOntology(ontology, IRI.create(new File("C:\\Users\\Admin\\Desktop\\exa55.owl").toURI()));
-            // Entities are named using IRIs. These are usually too long for use
-            // in user interfaces. To solve this
-            // problem, and so a query can be written using short class,
-            // property, individual names we use a short form
-            // provider. In this case, we'll just use a simple short form
-            // provider that generates short froms from IRI
-            // fragments.
             ShortFormProvider shortFormProvider = new SimpleShortFormProvider();
             // Create the DLQueryPrinter helper class. This will manage the
             // parsing of input and printing of results
-            DLQueryPrinter dlQueryPrinter = new DLQueryPrinter(
+            dlQueryPrinter = new DLQueryPrinter(
                     new DLQueryEngine(pelletReasoner, shortFormProvider),
                     shortFormProvider);
             // Enter the query loop. A user is expected to enter class
             // expression on the command line.
-            doQueryLoop(dlQueryPrinter);
-        } catch (IOException ioEx) {
-            System.out.println(ioEx.getMessage());
-        }
+            
+        
     }
 
-    private static void doQueryLoop(DLQueryPrinter dlQueryPrinter) throws IOException {
-        // Prompt the user to enter a class expression
-        System.out
-                .println("Please type a class expression in Manchester Syntax and press Enter (or press x to exit):");
-        System.out.println("");
-        String classExpression = readInput();
+    public DLQueryPrinter getDlQueryPrinter() {
+        return dlQueryPrinter;
+    }
 
+    public void setDlQueryPrinter(DLQueryPrinter dlQueryPrinter) {
+        this.dlQueryPrinter = dlQueryPrinter;
+    }
+
+    public Set<OWLNamedIndividual> doQueryLoop(DLQueryPrinter dlQueryPrinter) throws IOException {
+
+        String classExpression = readData();
         System.out.println(classExpression);
-        // Check for exit condition
-
-        dlQueryPrinter.askQuery(classExpression.trim());
+        Set<OWLNamedIndividual> askQuery = dlQueryPrinter.askQuery(classExpression.trim());
         System.out.println();
         System.out.println();
+        return askQuery;
 
     }
 
-    private static String readInput() throws IOException {
+    private static String readData() throws IOException {
         InputStream is = System.in;
         InputStreamReader reader;
         reader = new InputStreamReader(is, Charset.forName("Cp1251"));
         BufferedReader br = new BufferedReader(reader);
-        return new String("иметь_звонки_в_Новосибирскую_область some меньше_или_равно_1800_минут and (иметь_сообщения_абонентам_Новосибирской_области some меньше_или_равно_600_СМС)".getBytes(), "Cp1251");
+        return name;
     }
 
     private static OWLReasoner createReasoner(final OWLOntology rootOntology) {
@@ -294,8 +290,8 @@ class DLQueryEngine {
                 .parseClassExpression(classExpressionString);
         System.out.println(classExpression);
         NodeSet<OWLNamedIndividual> individuals = reasoner.getInstances(
-                classExpression,false);
-        System.out.println( individuals.isEmpty());
+                classExpression, false);
+        System.out.println(individuals.isEmpty());
         return individuals.getFlattened();
     }
 }
@@ -369,8 +365,9 @@ class DLQueryPrinter {
     /**
      * @param classExpression the class expression to use for interrogation
      */
-    public void askQuery(String classExpression) {
+    public Set<OWLNamedIndividual> askQuery(String classExpression) {
         System.out.println("m");
+         Set<OWLNamedIndividual> individuals = null;
         if (classExpression.length() == 0) {
             System.out.println("No class expression specified");
         } else {
@@ -396,14 +393,15 @@ class DLQueryPrinter {
                 Set<OWLClass> subClasses = dlQueryEngine.getSubClasses(
                         classExpression, true);
                 printEntities("SubClasses", subClasses, sb);
-                Set<OWLNamedIndividual> individuals = dlQueryEngine
-                        .getInstances(classExpression,false);
+                individuals = dlQueryEngine
+                        .getInstances(classExpression, false);
                 printEntities("Instances", individuals, sb);
                 System.out.println(sb.toString());
             } catch (ParserException e) {
                 System.out.println(e.getMessage());
             }
         }
+        return individuals;
     }
 
     private void printEntities(String name, Set<? extends OWLEntity> entities,
