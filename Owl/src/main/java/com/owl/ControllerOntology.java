@@ -8,9 +8,11 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import org.mindswap.pellet.ABox;
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.model.AddAxiom;
 import org.semanticweb.owlapi.model.IRI;
@@ -37,6 +39,15 @@ import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
 import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
 import org.semanticweb.owlapi.util.DefaultPrefixManager;
 import org.semanticweb.owlapi.vocab.OWLFacet;
+import org.swrlapi.core.SWRLAPIRule;
+import org.swrlapi.core.SWRLRuleEngine;
+import org.swrlapi.exceptions.SWRLRuleException;
+import org.swrlapi.factory.SWRLAPIFactory;
+import org.swrlapi.owl2rl.OWL2RLEngine;
+import org.swrlapi.parser.SWRLParser;
+import org.swrlapi.sqwrl.SQWRLQueryEngine;
+import org.swrlapi.sqwrl.SQWRLResult;
+import org.swrlapi.sqwrl.exceptions.SQWRLException;
 
 public class ControllerOntology {
 
@@ -66,13 +77,18 @@ public class ControllerOntology {
             factory = owlManager.getOWLDataFactory();
             PelletReasonerFactory pelletReasonerFactory = PelletReasonerFactory.getInstance();
             PelletReasoner pelletReasoner = pelletReasonerFactory.createNonBufferingReasoner(ontology);
-            Set<Rule> rules = pelletReasoner.getKB().getRules();
-            for (Rule r : rules) {
-                System.out.println(r);
-            }
+//            Set<Rule> rules = pelletReasoner.getKB().getRules();
+//            SWRLRuleEngine ruleEngine = SWRLAPIFactory.createSWRLRuleEngine(ontology);
+//            Optional<SWRLAPIRule> swrlRule = ruleEngine.getSWRLRule("new");
+//
+//            SQWRLQueryEngine queryEngine = SWRLAPIFactory.createSQWRLQueryEngine(ontology);
+//            SQWRLResult result = queryEngine.runSQWRLQuery("new");
+//            System.out.println(result);
+//            for (Rule r : rules) {
+//                System.out.println(r);
+//            }
             pelletReasoner.getKB().realize();
             System.out.println(pelletReasoner.getReasonerName());
-
             IRI prifix = ontology.getOntologyID().getOntologyIRI().get();
             prefixManager = new DefaultPrefixManager();
             prefixManager.setDefaultPrefix(prifix.toString() + "#");
@@ -88,22 +104,27 @@ public class ControllerOntology {
 ////            System.out.println(reasonerVersion.toString());
         } catch (OWLOntologyCreationException owlcre) {
             System.out.println("The ontology could not be created: " + owlcre.getMessage());
-        }
+        } 
+//        catch (SWRLRuleException ex) {
+//            ex.printStackTrace();
+//        }
+//        } catch (SQWRLException ex) {
+//            Logger.getLogger(ControllerOntology.class.getName()).log(Level.SEVERE, null, ex);
+//        }
 
     }
 
     public List<String> giveAnswer(UserSet userSet) {
 
         OWLClass mess = createNewClass(userSet.getNumberMessage() + "", MIN_NUMBER, MESS, PACKAGE_MESS, HAS_NUMBER_MESS);
-        OWLClass call =createNewClass(userSet.getTimeCall() + "", MIN_NUMBER, CALL, PACKAGE_CALL, HAS_NUMBER_CALL);
-        List<String> doDlQuery = doDlQuery(mess,call);
+        OWLClass call = createNewClass(userSet.getTimeCall() + "", MIN_NUMBER, CALL, PACKAGE_CALL, HAS_NUMBER_CALL);
+        List<String> doDlQuery = doDlQuery(mess, call);
         return doDlQuery;
-        
 
     }
 
     private OWLClass createNewClass(String name, String prefix, String suffix, String subclass, String has) {
-        
+
         OWLClass classUser = factory.getOWLClass(prefix + name + suffix, prefixManager);
         OWLClass subclassUser = factory.getOWLClass(subclass, prefixManager);
         OWLAxiom axiom = factory.getOWLSubClassOfAxiom(classUser, subclassUser);
@@ -122,30 +143,25 @@ public class ControllerOntology {
         owlManager.addAxiom(ontology, declarationAxiom);
         System.out.println(addAxiom);
         owlManager.applyChange(addAxiom);
-
-        try {
-            owlManager.saveOntology(ontology, IRI.create(ontologyOwlFile.toURI()));
-        } catch (OWLOntologyStorageException ex) {
-            return null;
-        }
+        saveOntology();
         return classUser;
     }
 
     private List<String> doDlQuery(OWLClass mess, OWLClass call) {
-        String name = "("+HAS_MESS+SOME+ mess.getIRI().getShortForm()+")" + " and "+ "("+ HAS_CALL + SOME + call.getIRI().getShortForm() + " )";
-       
+        String name = "(" + HAS_MESS + SOME + mess.getIRI().getShortForm() + ")" + " and " + "(" + HAS_CALL + SOME + call.getIRI().getShortForm() + " )";
+
         System.out.println(name);
         Set<OWLNamedIndividual> doQueryAnswer = null;
         try {
-            Dl dl = new Dl(ontology,name);
+            Dl dl = new Dl(ontology, name);
             doQueryAnswer = dl.doQueryLoop(dl.getDlQueryPrinter());
         } catch (OWLOntologyStorageException | IOException ex) {
         }
-        if (!doQueryAnswer.isEmpty()){
+        if (!doQueryAnswer.isEmpty()) {
             List<String> answer = new ArrayList<>();
-            for(OWLNamedIndividual nameAnswer: doQueryAnswer){
+            for (OWLNamedIndividual nameAnswer : doQueryAnswer) {
                 int index = nameAnswer.getIRI().getShortForm().indexOf("#");
-                if (index == -1){
+                if (index == -1) {
                     index = 0;
                 }
                 answer.add(nameAnswer.getIRI().getShortForm().substring(index));
@@ -154,7 +170,13 @@ public class ControllerOntology {
         }
         return null;
     }
-    
-    
+
+    void saveOntology() {
+        try {
+            owlManager.saveOntology(ontology, IRI.create(ontologyOwlFile.toURI()));
+        } catch (OWLOntologyStorageException ex) {
+
+        }
+    }
 
 }

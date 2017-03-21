@@ -35,5 +35,10 @@
             <version>2.4.0-ignazio1977</version>
             <type>jar</type>
         </dependency>
+        <dependency>
+            <groupId>edu.stanford.swrl</groupId>
+            <artifactId>swrlapi-drools-engine</artifactId>
+            <version>1.1.4</version>
+        </dependency>
     </dependencies>
 </project>

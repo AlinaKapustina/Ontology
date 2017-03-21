@@ -4,7 +4,7 @@ import java.io.IOException;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 import view.MainWindow;
 
-public class owl {
+public class Owl {
  public static void main(String[] args) throws OWLOntologyStorageException, IOException  {
      ControllerOntology controllerOntology = new ControllerOntology();
      Controller controller = new Controller();

@@ -115,7 +115,7 @@ public class Dl {
             PelletReasoner pelletReasoner = pelletReasonerFactory.createNonBufferingReasoner(ontology);
             Set<Rule> rules = pelletReasoner.getKB().getRules();
             rules.forEach(r -> System.out.println(r));
-          //  pelletReasoner.getKB().printClassTree();
+          pelletReasoner.getKB().printClassTree();
             pelletReasoner.getKB().realize();
            // pelletReasoner.getKB().printClassTree();
 
