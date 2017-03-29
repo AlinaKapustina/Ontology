@@ -152,6 +152,16 @@ public class Dl {
         return askQuery;
 
     }
+      public Set<OWLClass> doQuery(DLQueryPrinter dlQueryPrinter) throws IOException {
+
+        String classExpression = readData();
+        System.out.println(classExpression);
+        Set<OWLClass> askQuery = dlQueryPrinter.ask(classExpression.trim());
+        System.out.println();
+        System.out.println();
+        return askQuery;
+
+    }
 
     private static String readData() throws IOException {
         InputStream is = System.in;
@@ -402,6 +412,12 @@ class DLQueryPrinter {
             }
         }
         return individuals;
+    }
+    
+    Set<OWLClass> ask(String classExpression){
+        Set<OWLClass> subClasses = dlQueryEngine.getSubClasses(
+                        classExpression, true);
+        return subClasses;
     }
 
     private void printEntities(String name, Set<? extends OWLEntity> entities,

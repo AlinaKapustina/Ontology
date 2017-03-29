@@ -1,27 +1,56 @@
 package data;
+
 public class UserSet {
-    private int numberMessage;
-    private  int TimeCall;
 
-    public UserSet(int numberMessage, int TimeCall) {
-        this.numberMessage = numberMessage;
-        this.TimeCall = TimeCall;
+    private MessangeData messangeData;
+    private InternetData internetData;
+    private CallData callData;
+
+    public UserSet(MessangeData messangeData, InternetData internetData, CallData callData) {
+        this.messangeData = messangeData;
+        this.internetData = internetData;
+        this.callData = callData;
     }
 
-    public int getNumberMessage() {
-        return numberMessage;
+    public UserSet(MessangeData messangeData) {
+        this.messangeData = messangeData;
     }
 
-    public void setNumberMessage(int numberMessage) {
-        this.numberMessage = numberMessage;
+    public UserSet(InternetData internetData) {
+        this.internetData = internetData;
     }
 
-    public int getTimeCall() {
-        return TimeCall;
+    public UserSet() {
     }
 
-    public void setTimeCall(int TimeCall) {
-        this.TimeCall = TimeCall;
+    public UserSet(CallData callData) {
+        this.callData = callData;
     }
+    
+    public MessangeData getMessangeData() {
+        return messangeData;
+    }
+
+    public void setMessangeData(MessangeData messangeData) {
+        this.messangeData = messangeData;
+    }
+
+    public InternetData getInternetData() {
+        return internetData;
+    }
+
+    public void setInternetData(InternetData internetData) {
+        this.internetData = internetData;
+    }
+
+    public CallData getCallData() {
+        return callData;
+    }
+
+    public void setCallData(CallData callData) {
+        this.callData = callData;
+    }
+    
+    
     
 }
