@@ -1,22 +1,34 @@
 package view;
 
+import com.owl.ControllerOntology;
 import data.CallData;
 import data.InternetData;
 import data.MessageData;
 import data.UserSet;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 import main_package.Controller;
+import org.semanticweb.owlapi.model.OWLOntologyStorageException;
 
 public class ControllerView implements ActionListener {
 
+    private ControllerOntology controllerOntology = null;
+     
     private final Controller controller = new Controller();
     private final UserSet userSet = new UserSet();
     private final View view;
 
     public ControllerView(View view) {
         this.view = view;
+        try {
+            controllerOntology = new ControllerOntology();
+        } catch (OWLOntologyStorageException | IOException ex) {
+        }
+        controller.setControllerOntology(controllerOntology);
     }
 
     @Override

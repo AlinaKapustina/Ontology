@@ -89,7 +89,7 @@ public class ControllerOntology {
             PelletReasonerFactory pelletReasonerFactory = PelletReasonerFactory.getInstance();
             PelletReasoner pelletReasoner = pelletReasonerFactory.createNonBufferingReasoner(ontology);
             Set<Rule> rules = pelletReasoner.getKB().getRules();
-            
+
             IRI prifix = ontology.getOntologyID().getOntologyIRI().get();
             prefixManager = new DefaultPrefixManager();
             prefixManager.setDefaultPrefix(prifix.toString() + "#");
@@ -125,10 +125,10 @@ public class ControllerOntology {
 
             OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
             OWLReasoner reasoner = reasonerFactory.createNonBufferingReasoner(ontology);
-            
-                OWLClass createNewClass = createNewClass("Объект_1", "", "", "Подключенный_модуль");
-                Set <OWLClassExpression> set = new HashSet<>();
-              /*  String tarif = result.getColumn("Тариф").get(0).toString();
+
+            OWLClass createNewClass = createNewClass("Объект_1", "", "", "Подключенный_модуль");
+            Set<OWLClassExpression> set = new HashSet<>();
+            /*  String tarif = result.getColumn("Тариф").get(0).toString();
                 String ysluga = result.getColumn("Услуга").get(0).toString();
                 int index = tarif.indexOf(":");
                 if (index == -1){
@@ -146,14 +146,14 @@ public class ControllerOntology {
             for (OWLClass a : unsatisfiableClasses) {
                 System.out.println(unsatisfiableClasses.iterator().next());
             }
-*/
+             */
 ////            Dl dl = new Dl(ontology);
 ////            reasoner.precomputeInferences(InferenceType.CLASS_HIERARCHY);
 ////            Version reasonerVersion = reasoner.getReasonerVersion();
 ////            System.out.println(reasonerVersion.toString());
         } catch (OWLOntologyCreationException owlcre) {
             System.out.println("The ontology could not be created: " + owlcre.getMessage());
-        } 
+        }
 
     }
 
@@ -164,9 +164,18 @@ public class ControllerOntology {
         List<String> doDlQuery = doDlQuery(mess, call);
         return doDlQuery;
     }
-    
-    private void convertMessageData(MessageData messageData){
+
+    private void convertMessageData(MessageData messageData) {
         
+        String s = "diplom:Тариф(?x)^"+
+                "diplom:иметь_сообщения_абонентам_Новосибирской_области(?x,?y) ^ diplom:иметь_количество_сообщений(?y,?t)"
+                + "swrlb:greaterThan(?t," + messageData.getMinNumberMessage() + ")^"
+                + "swrlb:lessThan(?t," + messageData.getMaxNumberMessage() + ")->sqwrl:select(?x) ";
+        SQWRLQueryEngine queryEngine = SWRLAPIFactory.createSQWRLQueryEngine(ontology);
+        try {
+            queryEngine.createSWRLRule("my_rule", s);
+        } catch (SWRLParseException | SWRLBuiltInException ex) {
+        }
     }
 
     private OWLClass createNewClassWithProperty(String name, String prefix, String suffix, String subclass, String has) {
@@ -192,8 +201,9 @@ public class ControllerOntology {
         saveOntology();
         return classUser;
     }
-    private OWLClass createNewClass(String name,String prefix, String suffix, String subclass){
-        
+
+    private OWLClass createNewClass(String name, String prefix, String suffix, String subclass) {
+
         OWLClass classUser = factory.getOWLClass(prefix + name + suffix, prefixManager);
         OWLClass subclassUser = factory.getOWLClass(subclass, prefixManager);
         OWLAxiom axiom = factory.getOWLSubClassOfAxiom(classUser, subclassUser);
@@ -201,26 +211,25 @@ public class ControllerOntology {
         owlManager.applyChange(addAxiom);
         saveOntology();
         return classUser;
-        
+
     }
-    
-    private OWLClassExpression createOWLEquivlentClassAxiom( String property, String value){
+
+    private OWLClassExpression createOWLEquivlentClassAxiom(String property, String value) {
         OWLObjectProperty objectProperty = factory.getOWLObjectProperty(property, prefixManager);
         OWLIndividual individual = factory.getOWLNamedIndividual(value, prefixManager);
-        OWLClassExpression expression = factory.getOWLObjectHasValue(objectProperty,individual);
+        OWLClassExpression expression = factory.getOWLObjectHasValue(objectProperty, individual);
         return expression;
-        
-        
+
     }
-    
-    private void joinExpression(OWLClass classUser, Set <OWLClassExpression> set){
+
+    private void joinExpression(OWLClass classUser, Set<OWLClassExpression> set) {
         OWLClassExpression exp = factory.getOWLObjectIntersectionOf(set);
         OWLEquivalentClassesAxiom hasAxiom = factory.getOWLEquivalentClassesAxiom(classUser, exp);
         owlManager.addAxiom(ontology, hasAxiom);
         OWLDeclarationAxiom declarationAxiom = factory.getOWLDeclarationAxiom(classUser);
         owlManager.addAxiom(ontology, declarationAxiom);
         saveOntology();
-        
+
     }
 
     private List<String> doDlQuery(OWLClass mess, OWLClass call) {
