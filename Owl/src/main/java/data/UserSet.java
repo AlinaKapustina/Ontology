@@ -2,17 +2,17 @@ package data;
 
 public class UserSet {
 
-    private MessangeData messangeData;
+    private MessageData messangeData;
     private InternetData internetData;
     private CallData callData;
 
-    public UserSet(MessangeData messangeData, InternetData internetData, CallData callData) {
+    public UserSet(MessageData messangeData, InternetData internetData, CallData callData) {
         this.messangeData = messangeData;
         this.internetData = internetData;
         this.callData = callData;
     }
 
-    public UserSet(MessangeData messangeData) {
+    public UserSet(MessageData messangeData) {
         this.messangeData = messangeData;
     }
 
@@ -27,11 +27,11 @@ public class UserSet {
         this.callData = callData;
     }
     
-    public MessangeData getMessangeData() {
+    public MessageData getMessangeData() {
         return messangeData;
     }
 
-    public void setMessangeData(MessangeData messangeData) {
+    public void setMessangeData(MessageData messangeData) {
         this.messangeData = messangeData;
     }
 

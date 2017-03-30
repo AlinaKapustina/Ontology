@@ -3,6 +3,7 @@ package com.owl;
 import com.clarkparsia.pellet.owlapiv3.PelletReasoner;
 import com.clarkparsia.pellet.owlapiv3.PelletReasonerFactory;
 import com.clarkparsia.pellet.rules.model.Rule;
+import data.MessageData;
 import data.UserSet;
 import java.io.File;
 import java.io.IOException;
@@ -157,12 +158,15 @@ public class ControllerOntology {
     }
 
     public List<String> giveAnswer(UserSet userSet) {
-
+        convertMessageData(userSet.getMessangeData());
         OWLClass mess = createNewClassWithProperty(userSet.getMessangeData().getMinNumberMessage() + "", MIN_NUMBER, MESS, PACKAGE_MESS, HAS_NUMBER_MESS);
         OWLClass call = createNewClassWithProperty(userSet.getCallData().getMaxNumberCall() + "", MIN_NUMBER, CALL, PACKAGE_CALL, HAS_NUMBER_CALL);
         List<String> doDlQuery = doDlQuery(mess, call);
         return doDlQuery;
-
+    }
+    
+    private void convertMessageData(MessageData messageData){
+        
     }
 
     private OWLClass createNewClassWithProperty(String name, String prefix, String suffix, String subclass, String has) {

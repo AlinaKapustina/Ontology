@@ -1,0 +1,3966 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/admin/ontologies/2017/1/diplom"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/admin/ontologies/2017/1/diplom">
+    <Prefix name="" IRI="http://www.semanticweb.org/admin/ontologies/2017/1/diplom"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="diplom" IRI="http://www.semanticweb.org/admin/ontologies/2017/1/diplom#"/>
+    <Prefix name="untitled-ontology-19" IRI="http://www.semanticweb.org/admin/ontologies/2017/1/untitled-ontology-19#"/>
+    <Declaration>
+        <NamedIndividual IRI="#Другой_оператор"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smart_Nonstop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#меньше_или_равно_600_минут"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_интернет_ночью"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#3500_минут"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#не_может_применяться_с_услугой"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Подключенный_модуль"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_региона"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_Новосибирской_области"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smart+"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_МТС_Новосибирской_области"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_другого_оператора"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Интернет"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_МТС_другого_региона"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SMS300"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_сообщения"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#300_минут"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_МТС_Новосибирской_области"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#меньше_или_равно_1800_минут"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_тариф"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#300_СМС"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1_Гб"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_абоненскую_плату_с_учетом_подключенных_услуг"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_МТС"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#МТС"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#больше_или_равно_100_минут"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Объект_1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_стоимость_подключения_услуги"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#new"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_интернет"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Безлимит"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#меньше_или_равно_1800_СМС"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#new"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_стоимость_пользования_услугой"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#меньше_или_равно_3500_минут"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#8_Гб"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#меньше_или_равно_15_минут"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_Новосибирской_области"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Тариф"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Smart_Безлимитище"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_другого_оператора_Новосибирской_области"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_Новосибирской_области"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_МТС"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Другие_регионы"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Время_суток"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SMS500"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_услугу"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Smart_Top"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Smart+"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#900_минут"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_доступ_на_тарифах"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#900_СМС"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_другого_оператора_Новосибирской_области"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_другого_оператора_другого_региона"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_сообщения_абоненту"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Посекундный"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SMS.500"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора_Новосибирской_области"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ночь"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_Новосибирской_области"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_региона"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_интернета_за_1_Мб"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_МТС_Новосибирской_области"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#600_минут"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1800_СМС"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#3500_СМС"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#1800_минут"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Smart"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#600_СМС"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_звонки_в_регион"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#меньше_или_равно_250_минут"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#меньше_или_равно_450_СМC"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_оператора"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_количество_интернета_в_Гб"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#больше_или_равно_400_СМС"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#меньше_или_равно_300_минут"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#6_Гб"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#меньше_или_равно_900_минут"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Посекундный"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Новосибирская_область"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_другого_оператора_другого_региона"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора_другого_региона"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС_другого_региона"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Пакеты_сообщений"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ULTRA"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Безлимитные_SMS"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Услуга"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#меньше_или_равно_1_Гб"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#меньше_или_равно_15_СМС"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_оператора_другого_региона"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_региона"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#меньше_или_равно_900_СМС"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#меньше_или_равно_250_СМС"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#День"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_другого_оператора"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_звонки_в_другой_регион"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SMS.300"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_МТС_Новосибирской_области"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#меньше_или_равно_8_Гб"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#10_Гб"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#СМС450"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_звонки"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_время_звонков"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_другого_региона"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_МТС_другого_региона"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_звонки_абонентам"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_количество_сообщений"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ULTRA"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС_Новосибирской_области"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_интернет_днем"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Пакеты_звонков"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#не_иметь_доступ_на_тарифах"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SMS1000"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smart_Top"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#меньше_или_равно_200_минут"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Сообщения"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SMS100"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Оператор_сотовой_связи"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_оператора_Новосибирской_области"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#меньше_или_равно_6_Гб"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_Новосибирской_области"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#меньше_или_равно_300_СМС"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Подключенный_модуль"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#меньше_или_равно_10_Гб"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_другого_региона"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#меньше_или_равно_600_СМС"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_МТС"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#меньше_или_равно_200_СМС"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SMS.1000"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_подключенную_услугу_к_тарифу"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Звонки"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Регион"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_МТС_другого_региона"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smart_Безлимитище"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_сообщения_в_регион"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#меньше_или_равно_3500_СМС"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_звонки_в_Новосибирскую_область"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_абонентскую_плату_в_месяц_в_рублях"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SMS.100"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#200_СМС"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smart"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Smart_Nonstop"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_МТС"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_МТС_другого_региона"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#200_минут"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#иметь_абонентскую_плату_в_день_в_рублях"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#SMS.100"/>
+        <ObjectIntersectionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_доступ_на_тарифах"/>
+                <NamedIndividual IRI="#Посекундный"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_абоненту"/>
+                <NamedIndividual IRI="#Другой_оператор"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_абоненту"/>
+                <NamedIndividual IRI="#МТС"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_в_регион"/>
+                <NamedIndividual IRI="#Другие_регионы"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_в_регион"/>
+                <NamedIndividual IRI="#Новосибирская_область"/>
+            </ObjectHasValue>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_стоимость_подключения_услуги"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">10.0</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_стоимость_пользования_услугой"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">55.0</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SMS.1000"/>
+        <ObjectIntersectionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_доступ_на_тарифах"/>
+                <NamedIndividual IRI="#Посекундный"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_абоненту"/>
+                <NamedIndividual IRI="#Другой_оператор"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_абоненту"/>
+                <NamedIndividual IRI="#МТС"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_в_регион"/>
+                <NamedIndividual IRI="#Другие_регионы"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_в_регион"/>
+                <NamedIndividual IRI="#Новосибирская_область"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#не_может_применяться_с_услугой"/>
+                <NamedIndividual IRI="#SMS100"/>
+            </ObjectHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_стоимость_пользования_услугой"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">180.0</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SMS.300"/>
+        <ObjectIntersectionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_доступ_на_тарифах"/>
+                <NamedIndividual IRI="#Посекундный"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_абоненту"/>
+                <NamedIndividual IRI="#Другой_оператор"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_абоненту"/>
+                <NamedIndividual IRI="#МТС"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_в_регион"/>
+                <NamedIndividual IRI="#Другие_регионы"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_в_регион"/>
+                <NamedIndividual IRI="#Новосибирская_область"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#не_может_применяться_с_услугой"/>
+                <NamedIndividual IRI="#SMS100"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#не_может_применяться_с_услугой"/>
+                <NamedIndividual IRI="#SMS1000"/>
+            </ObjectHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_стоимость_пользования_услугой"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">90.0</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#SMS.500"/>
+        <ObjectIntersectionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_доступ_на_тарифах"/>
+                <NamedIndividual IRI="#Посекундный"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_абоненту"/>
+                <NamedIndividual IRI="#Другой_оператор"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_абоненту"/>
+                <NamedIndividual IRI="#МТС"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_в_регион"/>
+                <NamedIndividual IRI="#Другие_регионы"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_в_регион"/>
+                <NamedIndividual IRI="#Новосибирская_область"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#не_может_применяться_с_услугой"/>
+                <NamedIndividual IRI="#SMS100"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#не_может_применяться_с_услугой"/>
+                <NamedIndividual IRI="#SMS1000"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#не_может_применяться_с_услугой"/>
+                <NamedIndividual IRI="#SMS300"/>
+            </ObjectHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_стоимость_пользования_услугой"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">120.0</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Smart"/>
+        <ObjectIntersectionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_звонки_абонентам_МТС"/>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_звонки_в_Новосибирскую_область"/>
+                <NamedIndividual IRI="#600_минут"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_интернет"/>
+                <NamedIndividual IRI="#1_Гб"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_абонентам_Новосибирской_области"/>
+                <NamedIndividual IRI="#600_СМС"/>
+            </ObjectHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_абонентскую_плату_в_месяц_в_рублях"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_Новосибирской_области"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.5</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_Новосибирской_области"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">25.0</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_другого_региона"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">5.0</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_Новосибирской_области"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.5</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_региона"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.95</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Smart_Nonstop"/>
+        <ObjectIntersectionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_звонки_абонентам_МТС"/>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_звонки_в_Новосибирскую_область"/>
+                <NamedIndividual IRI="#300_минут"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_интернет_днем"/>
+                <NamedIndividual IRI="#10_Гб"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_интернет_ночью"/>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_абонентам_Новосибирской_области"/>
+                <NamedIndividual IRI="#300_СМС"/>
+            </ObjectHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_абонентскую_плату_в_месяц_в_рублях"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">350</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_Новосибирской_области"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.5</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_другого_региона"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">5.0</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_Новосибирской_области"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.5</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_региона"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.95</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Smart_Top"/>
+        <ObjectIntersectionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_звонки_абонентам_МТС"/>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_звонки_в_Новосибирскую_область"/>
+                <NamedIndividual IRI="#1800_минут"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_интернет"/>
+                <NamedIndividual IRI="#8_Гб"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_абонентам_Новосибирской_области"/>
+                <NamedIndividual IRI="#1800_СМС"/>
+            </ObjectHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_абонентскую_плату_в_месяц_в_рублях"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_Новосибирской_области"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.5</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_другого_региона"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">5.0</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_Новосибирской_области"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.5</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_региона"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.95</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Smart_Безлимитище"/>
+        <ObjectIntersectionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_звонки_абонентам_МТС"/>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_звонки_в_Новосибирскую_область"/>
+                <NamedIndividual IRI="#200_минут"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_интернет"/>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_абонентам_Новосибирской_области"/>
+                <NamedIndividual IRI="#200_СМС"/>
+            </ObjectHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_абонентскую_плату_в_день_в_рублях"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">12.9</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_Новосибирской_области"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.5</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_другого_региона"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">5.0</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_Новосибирской_области"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.5</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_региона"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.95</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#ULTRA"/>
+        <ObjectIntersectionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_звонки_абонентам_МТС"/>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_звонки_в_Новосибирскую_область"/>
+                <NamedIndividual IRI="#3500_минут"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_интернет"/>
+                <NamedIndividual IRI="#10_Гб"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_абонентам_Новосибирской_области"/>
+                <NamedIndividual IRI="#3500_СМС"/>
+            </ObjectHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_абонентскую_плату_в_месяц_в_рублях"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1700</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_Новосибирской_области"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.5</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_другого_региона"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">5.0</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_Новосибирской_области"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.5</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_региона"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.95</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#new"/>
+        <DataHasValue>
+            <DataProperty IRI="#иметь_абонентскую_плату_в_месяц_в_рублях"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">125</Literal>
+        </DataHasValue>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Время_суток"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Ночь"/>
+            <NamedIndividual IRI="#День"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Объект_1"/>
+        <ObjectIntersectionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_подключенную_услугу_к_тарифу"/>
+                <NamedIndividual IRI="#SMS100"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_тариф"/>
+                <NamedIndividual IRI="#Посекундный"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Оператор_сотовой_связи"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#МТС"/>
+            <NamedIndividual IRI="#Другой_оператор"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Подключенный_модуль"/>
+        <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#иметь_подключенную_услугу_к_тарифу"/>
+                <Class IRI="#Услуга"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#иметь_тариф"/>
+                <Class IRI="#Тариф"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Посекундный"/>
+        <ObjectIntersectionOf>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_МТС_другого_региона"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">3.0</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_Новосибирской_области"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.05</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора_другого_региона"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">12.0</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_Новосибирской_области"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.5</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_региона"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.95</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_интернета_за_1_Мб"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">9.9</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Регион"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Другие_регионы"/>
+            <NamedIndividual IRI="#Новосибирская_область"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#больше_или_равно_100_минут"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_звонков"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#больше_или_равно_400_СМС"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_сообщений"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">400</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#меньше_или_равно_10_Гб"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Интернет"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_интернета_в_Гб"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#меньше_или_равно_15_СМС"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_сообщений"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#меньше_или_равно_15_минут"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_звонков"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#меньше_или_равно_1800_СМС"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_сообщений"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1800</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#меньше_или_равно_1800_минут"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_звонков"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1800</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#меньше_или_равно_1_Гб"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Интернет"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_интернета_в_Гб"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#меньше_или_равно_200_СМС"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_сообщений"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#меньше_или_равно_200_минут"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_звонков"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#меньше_или_равно_250_СМС"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_сообщений"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">250</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#меньше_или_равно_250_минут"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_звонков"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">250</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#меньше_или_равно_300_СМС"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_сообщений"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#меньше_или_равно_300_минут"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_звонков"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#меньше_или_равно_3500_СМС"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_сообщений"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3500</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#меньше_или_равно_3500_минут"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_звонков"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3500</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#меньше_или_равно_450_СМC"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_сообщений"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">450</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#меньше_или_равно_600_СМС"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_сообщений"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">600</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#меньше_или_равно_600_минут"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_звонков"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">600</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#меньше_или_равно_6_Гб"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Интернет"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_интернета_в_Гб"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#меньше_или_равно_8_Гб"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Интернет"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_интернета_в_Гб"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#меньше_или_равно_900_СМС"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_сообщений"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">900</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#меньше_или_равно_900_минут"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_звонков"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">900</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Smart+"/>
+        <ObjectIntersectionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_звонки_абонентам_МТС"/>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_звонки_в_Новосибирскую_область"/>
+                <NamedIndividual IRI="#900_минут"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_интернет"/>
+                <NamedIndividual IRI="#6_Гб"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#иметь_сообщения_абонентам_Новосибирской_области"/>
+                <NamedIndividual IRI="#900_СМС"/>
+            </ObjectHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_абонентскую_плату_в_месяц_в_рублях"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">600</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">0.0</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_Новосибирской_области"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.5</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_другого_региона"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">5.0</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_Новосибирской_области"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.5</Literal>
+            </DataHasValue>
+            <DataHasValue>
+                <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_региона"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#double">1.95</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#SMS.100"/>
+        <Class IRI="#Пакеты_сообщений"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SMS.100"/>
+        <Class IRI="#Услуга"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SMS.1000"/>
+        <Class IRI="#Пакеты_сообщений"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SMS.1000"/>
+        <Class IRI="#Услуга"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SMS.300"/>
+        <Class IRI="#Пакеты_сообщений"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SMS.300"/>
+        <Class IRI="#Услуга"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SMS.500"/>
+        <Class IRI="#Пакеты_сообщений"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SMS.500"/>
+        <Class IRI="#Услуга"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smart"/>
+        <Class IRI="#Тариф"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smart_Nonstop"/>
+        <Class IRI="#Тариф"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smart_Top"/>
+        <Class IRI="#Тариф"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smart_Безлимитище"/>
+        <Class IRI="#Тариф"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ULTRA"/>
+        <Class IRI="#Тариф"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#new"/>
+        <Class IRI="#Тариф"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#new"/>
+        <DataHasValue>
+            <DataProperty IRI="#иметь_абонентскую_плату_в_месяц_в_рублях"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">125</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Безлимитные_SMS"/>
+        <Class IRI="#Услуга"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Время_суток"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Звонки"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Интернет"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Интернет"/>
+        <ObjectUnionOf>
+            <Class IRI="#Интернет"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Объект_1"/>
+        <Class IRI="#Подключенный_модуль"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Оператор_сотовой_связи"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Пакеты_звонков"/>
+        <Class IRI="#Звонки"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Пакеты_сообщений"/>
+        <Class IRI="#Сообщения"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Посекундный"/>
+        <Class IRI="#Тариф"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Регион"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Сообщения"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Тариф"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Услуга"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#больше_или_равно_100_минут"/>
+        <Class IRI="#Пакеты_звонков"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#больше_или_равно_400_СМС"/>
+        <Class IRI="#Пакеты_сообщений"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#меньше_или_равно_10_Гб"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Интернет"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_интернета_в_Гб"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#меньше_или_равно_15_СМС"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_сообщений"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#меньше_или_равно_15_минут"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_звонков"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">15</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#меньше_или_равно_1800_СМС"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_сообщений"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1800</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#меньше_или_равно_1800_минут"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_звонков"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1800</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#меньше_или_равно_1_Гб"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Интернет"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_интернета_в_Гб"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#меньше_или_равно_200_СМС"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_сообщений"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#меньше_или_равно_200_минут"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_звонков"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#меньше_или_равно_250_СМС"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_сообщений"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">250</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#меньше_или_равно_250_минут"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_звонков"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">250</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#меньше_или_равно_300_СМС"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_сообщений"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#меньше_или_равно_300_минут"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_звонков"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#меньше_или_равно_3500_СМС"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_сообщений"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3500</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#меньше_или_равно_3500_минут"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_звонков"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3500</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#меньше_или_равно_450_СМC"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_сообщений"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">450</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#меньше_или_равно_600_СМС"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_сообщений"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">600</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#меньше_или_равно_600_минут"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_звонков"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">600</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#меньше_или_равно_6_Гб"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Интернет"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_интернета_в_Гб"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#меньше_или_равно_8_Гб"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Интернет"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_интернета_в_Гб"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#меньше_или_равно_900_СМС"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_сообщений"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">900</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#меньше_или_равно_900_минут"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Пакеты_звонков"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">900</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smart+"/>
+        <Class IRI="#Тариф"/>
+    </SubClassOf>
+    <SubClassOf>
+        <DataHasValue>
+            <DataProperty IRI="#иметь_абонентскую_плату_в_месяц_в_рублях"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">125</Literal>
+        </DataHasValue>
+        <Class IRI="#new"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#SMS.100"/>
+        <NamedIndividual IRI="#SMS100"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SMS.1000"/>
+        <NamedIndividual IRI="#SMS1000"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SMS.300"/>
+        <NamedIndividual IRI="#SMS300"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SMS.500"/>
+        <NamedIndividual IRI="#SMS500"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smart"/>
+        <NamedIndividual IRI="#Smart"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smart_Nonstop"/>
+        <NamedIndividual IRI="#Smart_Nonstop"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smart_Top"/>
+        <NamedIndividual IRI="#Smart_Top"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smart_Безлимитище"/>
+        <NamedIndividual IRI="#Smart_Безлимитище"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ULTRA"/>
+        <NamedIndividual IRI="#ULTRA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectUnionOf>
+            <Class IRI="#Звонки"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+        <NamedIndividual IRI="#Безлимит"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectUnionOf>
+            <Class IRI="#Интернет"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+        <NamedIndividual IRI="#Безлимит"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectUnionOf>
+            <Class IRI="#Сообщения"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+        <NamedIndividual IRI="#Безлимит"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Безлимит"/>
+        </ObjectOneOf>
+        <NamedIndividual IRI="#Безлимит"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Время_суток"/>
+        <NamedIndividual IRI="#День"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Регион"/>
+        <NamedIndividual IRI="#Другие_регионы"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Оператор_сотовой_связи"/>
+        <NamedIndividual IRI="#Другой_оператор"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Оператор_сотовой_связи"/>
+        <NamedIndividual IRI="#МТС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Регион"/>
+        <NamedIndividual IRI="#Новосибирская_область"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Время_суток"/>
+        <NamedIndividual IRI="#Ночь"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Посекундный"/>
+        <NamedIndividual IRI="#Посекундный"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пакеты_сообщений"/>
+        <NamedIndividual IRI="#СМС450"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Сообщения"/>
+        <NamedIndividual IRI="#СМС450"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#СМС450"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectUnionOf>
+            <Class IRI="#Сообщения"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+        <NamedIndividual IRI="#СМС450"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Интернет"/>
+        <NamedIndividual IRI="#1_Гб"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Интернет"/>
+        <NamedIndividual IRI="#10_Гб"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пакеты_сообщений"/>
+        <NamedIndividual IRI="#1800_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Сообщения"/>
+        <NamedIndividual IRI="#1800_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#1800_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectUnionOf>
+            <Class IRI="#Сообщения"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+        <NamedIndividual IRI="#1800_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пакеты_звонков"/>
+        <NamedIndividual IRI="#1800_минут"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пакеты_сообщений"/>
+        <NamedIndividual IRI="#200_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Сообщения"/>
+        <NamedIndividual IRI="#200_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#200_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectUnionOf>
+            <Class IRI="#Сообщения"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+        <NamedIndividual IRI="#200_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пакеты_звонков"/>
+        <NamedIndividual IRI="#200_минут"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пакеты_сообщений"/>
+        <NamedIndividual IRI="#300_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Сообщения"/>
+        <NamedIndividual IRI="#300_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#300_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectUnionOf>
+            <Class IRI="#Сообщения"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+        <NamedIndividual IRI="#300_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пакеты_звонков"/>
+        <NamedIndividual IRI="#300_минут"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пакеты_сообщений"/>
+        <NamedIndividual IRI="#3500_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Сообщения"/>
+        <NamedIndividual IRI="#3500_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#3500_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectUnionOf>
+            <Class IRI="#Сообщения"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+        <NamedIndividual IRI="#3500_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пакеты_звонков"/>
+        <NamedIndividual IRI="#3500_минут"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Интернет"/>
+        <NamedIndividual IRI="#6_Гб"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пакеты_сообщений"/>
+        <NamedIndividual IRI="#600_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Сообщения"/>
+        <NamedIndividual IRI="#600_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#600_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectUnionOf>
+            <Class IRI="#Сообщения"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+        <NamedIndividual IRI="#600_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пакеты_звонков"/>
+        <NamedIndividual IRI="#600_минут"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Интернет"/>
+        <NamedIndividual IRI="#8_Гб"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пакеты_сообщений"/>
+        <NamedIndividual IRI="#900_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Сообщения"/>
+        <NamedIndividual IRI="#900_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="#900_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectUnionOf>
+            <Class IRI="#Сообщения"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+        <NamedIndividual IRI="#900_СМС"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Пакеты_звонков"/>
+        <NamedIndividual IRI="#900_минут"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Smart+"/>
+        <NamedIndividual IRI="#Smart+"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#иметь_звонки"/>
+        <NamedIndividual IRI="#new"/>
+        <NamedIndividual IRI="#Безлимит"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_количество_сообщений"/>
+        <NamedIndividual IRI="#SMS1000"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_абонентскую_плату_в_месяц_в_рублях"/>
+        <NamedIndividual IRI="#new"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">125</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_количество_сообщений"/>
+        <NamedIndividual IRI="#СМС450"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">450</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_количество_интернета_в_Гб"/>
+        <NamedIndividual IRI="#1_Гб"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_количество_интернета_в_Гб"/>
+        <NamedIndividual IRI="#10_Гб"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_количество_сообщений"/>
+        <NamedIndividual IRI="#1800_СМС"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1800</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+        <NamedIndividual IRI="#1800_минут"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1800</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_количество_сообщений"/>
+        <NamedIndividual IRI="#200_СМС"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+        <NamedIndividual IRI="#200_минут"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">200</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_количество_сообщений"/>
+        <NamedIndividual IRI="#300_СМС"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+        <NamedIndividual IRI="#300_минут"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">300</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_количество_сообщений"/>
+        <NamedIndividual IRI="#3500_СМС"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+        <NamedIndividual IRI="#3500_минут"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3500</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_количество_интернета_в_Гб"/>
+        <NamedIndividual IRI="#6_Гб"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_количество_сообщений"/>
+        <NamedIndividual IRI="#600_СМС"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+        <NamedIndividual IRI="#600_минут"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">600</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_количество_интернета_в_Гб"/>
+        <NamedIndividual IRI="#8_Гб"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_количество_сообщений"/>
+        <NamedIndividual IRI="#900_СМС"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">900</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+        <NamedIndividual IRI="#900_минут"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">900</Literal>
+    </DataPropertyAssertion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_звонки"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_МТС"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_МТС_Новосибирской_области"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_МТС_другого_региона"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_другого_оператора"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_другого_оператора_Новосибирской_области"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_другого_оператора_другого_региона"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_звонки_в_Новосибирскую_область"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_звонки_в_другой_регион"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_звонки_в_регион"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_интернет_ночью"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_сообщения"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_МТС"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_МТС_Новосибирской_области"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_МТС_другого_региона"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_Новосибирской_области"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_другого_оператора"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_другого_оператора_Новосибирской_области"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_другого_оператора_другого_региона"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_другого_региона"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_сообщения_абоненту"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="#иметь_сообщения_в_регион"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#иметь_звонки"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#иметь_интернет"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#иметь_сообщения"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#иметь_доступ_на_тарифах"/>
+        <ObjectProperty IRI="#иметь_услугу"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        <ObjectInverseOf>
+            <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+        </ObjectInverseOf>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#иметь_интернет_днем"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#иметь_интернет_ночью"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#не_может_применяться_с_услугой"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_доступ_на_тарифах"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки_абонентам"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки_абонентам"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_МТС"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_МТС"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_МТС_Новосибирской_области"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_МТС_Новосибирской_области"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_МТС_другого_региона"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_МТС_другого_региона"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_другого_оператора"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_другого_оператора"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_другого_оператора_Новосибирской_области"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_другого_оператора_Новосибирской_области"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_другого_оператора_другого_региона"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_другого_оператора_другого_региона"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки_в_Новосибирскую_область"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки_в_Новосибирскую_область"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки_в_другой_регион"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки_в_другой_регион"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки_в_регион"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_звонки_в_регион"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_интернет"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_интернет"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_интернет_днем"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_интернет_днем"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_интернет_ночью"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_интернет_ночью"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_подключенную_услугу_к_тарифу"/>
+        <Class IRI="#Подключенный_модуль"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_сообщения"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_МТС"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_МТС"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_МТС_Новосибирской_области"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_МТС_Новосибирской_области"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_МТС_другого_региона"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_МТС_другого_региона"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_Новосибирской_области"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_Новосибирской_области"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_другого_оператора"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_другого_оператора"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_другого_оператора_Новосибирской_области"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_другого_оператора_Новосибирской_области"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_другого_оператора_другого_региона"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_другого_оператора_другого_региона"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_другого_региона"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_другого_региона"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_сообщения_абоненту"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_сообщения_в_регион"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#иметь_тариф"/>
+        <Class IRI="#Подключенный_модуль"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#не_иметь_доступ_на_тарифах"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#не_может_применяться_с_услугой"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_доступ_на_тарифах"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_звонки_абонентам"/>
+        <Class IRI="#Оператор_сотовой_связи"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_звонки_абонентам"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#МТС"/>
+            <NamedIndividual IRI="#Другой_оператор"/>
+        </ObjectOneOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_МТС"/>
+        <ObjectUnionOf>
+            <Class IRI="#Звонки"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_МТС_Новосибирской_области"/>
+        <ObjectUnionOf>
+            <Class IRI="#Звонки"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_МТС_другого_региона"/>
+        <ObjectUnionOf>
+            <Class IRI="#Звонки"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_другого_оператора"/>
+        <ObjectUnionOf>
+            <Class IRI="#Звонки"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_другого_оператора_Новосибирской_области"/>
+        <ObjectUnionOf>
+            <Class IRI="#Звонки"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_звонки_абонентам_другого_оператора_другого_региона"/>
+        <ObjectUnionOf>
+            <Class IRI="#Звонки"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_звонки_в_Новосибирскую_область"/>
+        <ObjectUnionOf>
+            <Class IRI="#Звонки"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_звонки_в_другой_регион"/>
+        <ObjectUnionOf>
+            <Class IRI="#Звонки"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_звонки_в_регион"/>
+        <Class IRI="#Регион"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_звонки_в_регион"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Другие_регионы"/>
+            <NamedIndividual IRI="#Новосибирская_область"/>
+        </ObjectOneOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_интернет"/>
+        <ObjectUnionOf>
+            <Class IRI="#Интернет"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_интернет_днем"/>
+        <ObjectUnionOf>
+            <Class IRI="#Интернет"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_интернет_ночью"/>
+        <ObjectUnionOf>
+            <Class IRI="#Интернет"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_подключенную_услугу_к_тарифу"/>
+        <Class IRI="#Услуга"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_МТС"/>
+        <ObjectUnionOf>
+            <Class IRI="#Сообщения"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_МТС_Новосибирской_области"/>
+        <ObjectUnionOf>
+            <Class IRI="#Сообщения"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_МТС_другого_региона"/>
+        <ObjectUnionOf>
+            <Class IRI="#Сообщения"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_Новосибирской_области"/>
+        <ObjectUnionOf>
+            <Class IRI="#Сообщения"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_другого_оператора"/>
+        <ObjectUnionOf>
+            <Class IRI="#Сообщения"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_другого_оператора_Новосибирской_области"/>
+        <ObjectUnionOf>
+            <Class IRI="#Сообщения"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_другого_оператора_другого_региона"/>
+        <ObjectUnionOf>
+            <Class IRI="#Сообщения"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_сообщения_абонентам_другого_региона"/>
+        <ObjectUnionOf>
+            <Class IRI="#Сообщения"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_сообщения_абоненту"/>
+        <Class IRI="#Оператор_сотовой_связи"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_сообщения_абоненту"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#МТС"/>
+            <NamedIndividual IRI="#Другой_оператор"/>
+        </ObjectOneOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_сообщения_в_регион"/>
+        <Class IRI="#Регион"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_сообщения_в_регион"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#Другие_регионы"/>
+            <NamedIndividual IRI="#Новосибирская_область"/>
+        </ObjectOneOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#иметь_тариф"/>
+        <Class IRI="#Тариф"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#не_иметь_доступ_на_тарифах"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#не_может_применяться_с_услугой"/>
+        <Class IRI="#Услуга"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#не_может_применяться_с_услугой"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#иметь_доступ_на_тарифах"/>
+        <ObjectProperty IRI="#не_иметь_доступ_на_тарифах"/>
+    </DisjointObjectProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_абонентскую_плату_в_день_в_рублях"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_абонентскую_плату_в_месяц_в_рублях"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_время_звонков"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_количество_интернета_в_Гб"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_количество_сообщений"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС_Новосибирской_области"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС_другого_региона"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_Новосибирской_области"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_Новосибирской_области"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_другого_региона"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_региона"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_МТС"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_МТС_Новосибирской_области"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_МТС_другого_региона"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_Новосибирской_области"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора_Новосибирской_области"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора_другого_региона"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_региона"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_МТС"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_МТС_Новосибирской_области"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_МТС_другого_региона"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_Новосибирской_области"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_оператора"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_оператора_Новосибирской_области"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_оператора_другого_региона"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_региона"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty IRI="#иметь_цену_интернета_за_1_Мб"/>
+    </EquivalentDataProperties>
+    <EquivalentDataProperties>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </EquivalentDataProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#иметь_абонентскую_плату_в_день_в_рублях"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#иметь_абонентскую_плату_в_месяц_в_рублях"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#иметь_время_звонков"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#иметь_количество_интернета_в_Гб"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#иметь_количество_сообщений"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_абонентскую_плату_в_день_в_рублях"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_абонентскую_плату_в_месяц_в_рублях"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_количество_интернета_в_Гб"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_количество_сообщений"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС_Новосибирской_области"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС_другого_региона"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_Новосибирской_области"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_другого_региона"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_региона"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_МТС"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_МТС_Новосибирской_области"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_МТС_другого_региона"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_Новосибирской_области"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора_Новосибирской_области"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора_другого_региона"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_региона"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_МТС"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_МТС_Новосибирской_области"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_МТС_другого_региона"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_Новосибирской_области"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_оператора"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_оператора_Новосибирской_области"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_оператора_другого_региона"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_региона"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#иметь_цену_интернета_за_1_Мб"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_абонентскую_плату_в_день_в_рублях"/>
+        <Class IRI="#Тариф"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_абонентскую_плату_в_день_в_рублях"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_абонентскую_плату_в_месяц_в_рублях"/>
+        <Class IRI="#Тариф"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_абонентскую_плату_в_месяц_в_рублях"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+        <Class IRI="#Звонки"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+        <ObjectUnionOf>
+            <Class IRI="#Звонки"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_количество_интернета_в_Гб"/>
+        <Class IRI="#Интернет"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_количество_интернета_в_Гб"/>
+        <ObjectUnionOf>
+            <Class IRI="#Интернет"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_количество_сообщений"/>
+        <ObjectUnionOf>
+            <Class IRI="#Сообщения"/>
+            <ObjectOneOf>
+                <NamedIndividual IRI="#Безлимит"/>
+            </ObjectOneOf>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_стоимость_пользования_услугой"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС"/>
+        <Class IRI="#Тариф"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС_Новосибирской_области"/>
+        <Class IRI="#Тариф"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС_Новосибирской_области"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС_другого_региона"/>
+        <Class IRI="#Тариф"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС_другого_региона"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_Новосибирской_области"/>
+        <Class IRI="#Тариф"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_Новосибирской_области"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора"/>
+        <Class IRI="#Тариф"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_Новосибирской_области"/>
+        <Class IRI="#Тариф"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_Новосибирской_области"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_другого_региона"/>
+        <Class IRI="#Тариф"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_другого_региона"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_региона"/>
+        <Class IRI="#Тариф"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_региона"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_МТС"/>
+        <Class IRI="#Тариф"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_МТС"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_МТС_Новосибирской_области"/>
+        <Class IRI="#Тариф"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_МТС_Новосибирской_области"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_МТС_другого_региона"/>
+        <Class IRI="#Тариф"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_МТС_другого_региона"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_Новосибирской_области"/>
+        <Class IRI="#Тариф"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_Новосибирской_области"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора"/>
+        <Class IRI="#Тариф"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора_Новосибирской_области"/>
+        <Class IRI="#Тариф"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора_Новосибирской_области"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора_другого_региона"/>
+        <Class IRI="#Тариф"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора_другого_региона"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_региона"/>
+        <Class IRI="#Тариф"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_региона"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_интернета_за_1_Мб"/>
+        <Class IRI="#Тариф"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#иметь_цену_интернета_за_1_Мб"/>
+        <ObjectUnionOf>
+            <Class IRI="#Тариф"/>
+            <Class IRI="#Услуга"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_абонентскую_плату_в_день_в_рублях"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_абонентскую_плату_в_месяц_в_рублях"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_время_звонков_в_минутах"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_количество_интернета_в_Гб"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_количество_сообщений"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_стоимость_пользования_услугой"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС_Новосибирской_области"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС_другого_региона"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_Новосибирской_области"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_Новосибирской_области"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_другого_региона"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_региона"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_МТС"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_МТС_Новосибирской_области"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_МТС_другого_региона"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_Новосибирской_области"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора_Новосибирской_области"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора_другого_региона"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_региона"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_МТС"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_МТС_Новосибирской_области"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_МТС_другого_региона"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_Новосибирской_области"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_оператора"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_оператора_Новосибирской_области"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_оператора_другого_региона"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_региона"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#иметь_цену_интернета_за_1_Мб"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">name</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Smart"/>
+                <Variable IRI="#p"/>
+            </ClassAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="#p"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">rest</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Тариф"/>
+                <Variable IRI="#x"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_сообщения"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#t"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <Variable IRI="#t"/>
+                <Variable IRI="#l"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#greatest">
+                <Variable IRI="#l"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1800</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="#x"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">S16</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Тариф"/>
+                <Variable IRI="#x"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_сообщения"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#y"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <Variable IRI="#y"/>
+                <Variable IRI="#t"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="#t"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">30</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="#t"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#int">300</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="#x"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">new</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Тариф"/>
+                <Variable IRI="#x"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_другого_оператора_Новосибирской_области"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#y"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#sum">
+                <Variable IRI="#y"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="#x"/>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">select</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Услуга"/>
+                <Variable IRI="#x"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <Variable IRI="#x"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">100</Literal>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_стоимость_подключения_услуги"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#y"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_стоимость_пользования_услугой"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#t"/>
+            </DataPropertyAtom>
+            <ClassAtom>
+                <Class IRI="#Тариф"/>
+                <Variable IRI="#z"/>
+            </ClassAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_услугу"/>
+                <Variable IRI="#z"/>
+                <Variable IRI="#x"/>
+            </ObjectPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#add">
+                <Variable IRI="#sum"/>
+                <Variable IRI="#y"/>
+                <Variable IRI="#t"/>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#select">
+                <Variable IRI="#x"/>
+                <Variable IRI="#z"/>
+                <Variable IRI="#sum"/>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://sqwrl.stanford.edu/ontologies/built-ins/3.4/sqwrl.owl#columnNames">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Услуга</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Тариф</Literal>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Цена</Literal>
+            </BuiltInAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_звонки_абонентам_МТС"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_звонки_абонентам"/>
+                <Variable IRI="urn:swrl#x"/>
+                <NamedIndividual IRI="#МТС"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_звонки_абонентам_МТС"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_звонки_абонентам_МТС_другого_региона"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_звонки_абонентам_МТС_Новосибирской_области"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_звонки_абонентам_МТС_Новосибирской_области"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_звонки_в_регион"/>
+                <Variable IRI="urn:swrl#x"/>
+                <NamedIndividual IRI="#Новосибирская_область"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_звонки_абонентам"/>
+                <Variable IRI="urn:swrl#x"/>
+                <NamedIndividual IRI="#МТС"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_звонки_абонентам_МТС_другого_региона"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_звонки_в_регион"/>
+                <Variable IRI="urn:swrl#x"/>
+                <NamedIndividual IRI="#Другие_регионы"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_звонки_абонентам"/>
+                <Variable IRI="urn:swrl#x"/>
+                <NamedIndividual IRI="#МТС"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_звонки_в_Новосибирскую_область"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_звонки_в_регион"/>
+                <Variable IRI="urn:swrl#x"/>
+                <NamedIndividual IRI="#Новосибирская_область"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">S7</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_интернет"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_интернет_днем"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_интернет_ночью"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_сообщения_абонентам_МТС"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_сообщения_абонентам_МТС_другого_региона"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_сообщения_абонентам_МТС_Новосибирской_области"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string"></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">S8</Literal>
+        </Annotation>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_сообщения_абонентам_Новосибирской_области"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#y"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <Variable IRI="#y"/>
+                <Variable IRI="#t"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_количество_сообщений"/>
+                <Variable IRI="#x"/>
+                <Variable IRI="#t"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_сообщения_абонентам_Новосибирской_области"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_сообщения_абонентам_МТС_Новосибирской_области"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_сообщения_абонентам_другого_оператора_Новосибирской_области"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_сообщения_абонентам_Новосибирской_области"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+        </Body>
+        <Head>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_сообщения_в_регион"/>
+                <Variable IRI="urn:swrl#x"/>
+                <NamedIndividual IRI="#Новосибирская_область"/>
+            </ObjectPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ObjectPropertyAtom>
+                <ObjectProperty IRI="#иметь_услугу"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </ObjectPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_стоимость_пользования_услугой"/>
+                <Variable IRI="urn:swrl#y"/>
+                <Variable IRI="urn:swrl#u"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_абоненскую_плату_с_учетом_подключенных_услуг"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#u"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС_другого_региона"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_цену_за_минуту_звонка_абонентам_МТС_Новосибирской_области"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_Новосибирской_области"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_МТС_Новосибирской_области"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора_Новосибирской_области"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора_другого_региона"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_цену_за_секунду_звонка_абонентам_другого_оператора_Новосибирской_области"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_Новосибирской_области"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_МТС_Новосибирской_области"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_оператора_Новосибирской_области"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_региона"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </DataPropertyAtom>
+        </Body>
+        <Head>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_другого_оператора_другого_региона"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </DataPropertyAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#иметь_цену_за_сообщения_абонентам_МТС_другого_региона"/>
+                <Variable IRI="urn:swrl#x"/>
+                <Variable IRI="urn:swrl#y"/>
+            </DataPropertyAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Пакеты_звонков</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Предоставляемые оператором сотовом связи минуты общения за определенную абоненскую плату. Для этих пакетов могут устанавливаться определенные ограничения. Например, звонки только на определенный оператор сотовой связи, или в определенном регионе.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Пакеты_сообщений</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Предоставляемые оператором сотовой связи пакеты смс за определенную абоненскую плату либо в месяц, либо посуточно.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

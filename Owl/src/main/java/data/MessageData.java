@@ -1,7 +1,7 @@
 
 package data;
 
-public class MessangeData {
+public class MessageData {
     
     private int minNumberMessage;
     private int maxNumberMessage;
