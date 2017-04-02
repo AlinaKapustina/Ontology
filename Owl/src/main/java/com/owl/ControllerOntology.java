@@ -4,6 +4,7 @@ import com.clarkparsia.pellet.owlapiv3.PelletReasoner;
 import com.clarkparsia.pellet.owlapiv3.PelletReasonerFactory;
 import com.clarkparsia.pellet.rules.model.Rule;
 import data.CallData;
+import data.InternetData;
 import data.MessageData;
 import data.UserSet;
 import java.io.File;
@@ -160,218 +161,44 @@ public class ControllerOntology {
     }
 
     public List<String> giveAnswer(UserSet userSet) {
-        convertMessageData(userSet.getMessangeData());
-        convertCallData(userSet.getCallData());
+        generateQueryMessage(userSet.getMessangeData());
+        generateQueryCall(userSet.getCallData());
 //        OWLClass mess = createNewClassWithProperty(userSet.getMessangeData().getMinNumberMessage() + "", MIN_NUMBER, MESS, PACKAGE_MESS, HAS_NUMBER_MESS);
 //        OWLClass call = createNewClassWithProperty(userSet.getCallData().getMaxNumberCall() + "", MIN_NUMBER, CALL, PACKAGE_CALL, HAS_NUMBER_CALL);
 //        List<String> doDlQuery = doDlQuery(mess, call);
         return null;
     }
 
-    private void convertMessageData(MessageData messageData) {
-
-        String message1 = "diplom:Тариф(?x)^"
-                + "diplom:иметь_сообщения_абонентам_Новосибирской_области(?x,?y) ^ diplom:иметь_количество_сообщений(?y,?t)"
-                + "swrlb:greaterThanOrEqual(?t," + messageData.getMinNumberMessage() + ")^"
-                + "swrlb:lessThanOrEqual(?t," + messageData.getMaxNumberMessage() + ")^"
-                + "diplom:иметь_абонентскую_плату_в_месяц_в_рублях(?x,?s)->sqwrl:select(?x,?s) ^ "
-                + "sqwrl:columnNames(\"Тариф\",\"Абонентская плата\")";
-
-        String message2 = "diplom:Тариф(?x)^"
-                + "diplom:иметь_сообщения_абонентам_Новосибирской_области(?x,?y) ^ diplom:иметь_количество_сообщений(?y,?t)"
-                + "swrlb:lessThanOrEqual(?t," + messageData.getMinNumberMessage() + ")^"
-                + "swrlb:subtract(?d," + messageData.getMinNumberMessage() + ",?t)^"
-                + "diplom:иметь_цену_за_сообщения_абонентам_другого_оператора_Новосибирской_области(?x,?c)^"
-                + "diplom:иметь_цену_за_сообщения_абонентам_МТС_Новосибирской_области(?x,?c1) ^"
-                + "diplom:иметь_абонентскую_плату_в_месяц_в_рублях(?x,?s)^"
-                + "swrlb:add(?k, ?c, ?c1) ^ swrlb:divide(?mod, ?k, 2) ^ swrlb:subtract(?subs, ?c, ?mod) "
-                + "^ swrlb:abs(?abs, ?subs) ^ swrlb:add(?ans, ?mod, ?abs)"
-                + "^swrlb:multiply(?mult,?d,?ans)"
-                + "->sqwrl:select(?x,?mult,?s)^"
-                + "sqwrl:columnNames(\"Тариф\",\"Цена\",\"Абонентская плата\")";
-
-        String message3 = "diplom:Тариф(?x)^"
-                + "diplom:иметь_сообщения_абонентам_Новосибирской_области(?x,?y) ^ diplom:иметь_количество_сообщений(?y,?t)"
-                + "swrlb:lessThanOrEqual(?t," + messageData.getMinNumberMessage() + ")^"
-                + "swrlb:subtract(?d," + messageData.getMinNumberMessage() + ",?t)^"
-                + "diplom:иметь_цену_за_сообщения_абонентам_другого_оператора_Новосибирской_области(?x,?c)^"
-                + "diplom:иметь_цену_за_сообщения_абонентам_МТС_Новосибирской_области(?x,?c1) ^"
-                + "diplom:иметь_абонентскую_плату_в_месяц_в_рублях(?x,?s)^"
-                + "swrlb:add(?k, ?c, ?c1) ^ swrlb:divide(?mod, ?k, 2) ^ swrlb:subtract(?subs, ?c, ?mod) "
-                + "^ swrlb:abs(?abs, ?subs) ^ swrlb:add(?ans, ?mod, ?abs)"
-                + "^swrlb:multiply(?mult,?d,?ans)"
-                + "->sqwrl:select(?x,?mult,?s)^"
-                + "sqwrl:columnNames(\"Тариф\",\"Цена\",\"Абонентская плата\")";
-
-        String message4 = "diplom:Тариф(?x)^"
-                + "diplom:иметь_сообщения_абонентам_Новосибирской_области(?x,?y) ^ diplom:иметь_количество_сообщений(?y,?t)"
-                + "swrlb:lessThanOrEqual(?t," + messageData.getMinNumberMessage() + ")^"
-                + "swrlb:subtract(?d," + messageData.getMinNumberMessage() + ",?t)^"
-                + "diplom:иметь_цену_за_сообщения_абонентам_другого_оператора_Новосибирской_области(?x,?c)^"
-                + "diplom:иметь_цену_за_сообщения_абонентам_МТС_Новосибирской_области(?x,?c1) ^"
-                + "diplom:иметь_абонентскую_плату_в_день_в_рублях(?x,?s)^"
-                + "swrlb:add(?k, ?c, ?c1) ^ swrlb:divide(?mod, ?k, 2) ^ swrlb:subtract(?subs, ?c, ?mod) "
-                + "^ swrlb:abs(?abs, ?subs) ^ swrlb:add(?ans, ?mod, ?abs)"
-                + "^swrlb:multiply(?mult,?d,?ans)^"
-                + "swrlb:multiply(?m,?s,30)"
-                + "->sqwrl:select(?x,?mult,?m)^"
-                + "sqwrl:columnNames(\"Тариф\",\"Цена\",\"Абонентская плата\")";
-
-        String message5 = "diplom:Тариф(?x)^"
-                + "diplom:иметь_цену_за_сообщения_абонентам_другого_оператора_Новосибирской_области(?x,?c)^"
-                + "diplom:иметь_цену_за_сообщения_абонентам_МТС_Новосибирской_области(?x,?c1) ^"
-                + "swrlb:add(?k, ?c, ?c1) ^ swrlb:divide(?mod, ?k, 2) ^ swrlb:subtract(?subs, ?c, ?mod) "
-                + "^ swrlb:abs(?abs, ?subs) ^ swrlb:add(?ans, ?mod, ?abs)"
-                + "^swrlb:multiply(?mult," + messageData.getMinNumberMessage() + ",?ans)^"
-                + "->sqwrl:select(?x,?mult)^"
-                + "sqwrl:columnNames(\"Тариф\",\"Цена\")";
-
-        String message6 = "diplom:Тариф(?x)^diplom:Услуга(?q)^diplom:иметь_услугу(?x,?q)^diplom:иметь_количество_сообщений(?q,?t)^"
-                + "swrlb:greaterThanOrEqual(?t," + messageData.getMinNumberMessage() + ")^"
-                + "swrlb:lessThanOrEqual(?t," + messageData.getMaxNumberMessage() + ")^"
-                + "diplom:иметь_стоимость_пользования_услугой(?q,?s)"
-                + "->sqwrl:select(?x,?q,?s)^"
-                + "sqwrl:columnNames(\"Тариф\",\"Услуга\",\"Цена\")";
-
-        String message7 = "diplom:Тариф(?x)^diplom:Услуга(?q)^diplom:иметь_услугу(?x,?q)^diplom:иметь_количество_сообщений(?q,?t)^"
-                + "swrlb:greaterThanOrEqual(?t," + messageData.getMinNumberMessage() + ")^"
-                + "diplom:иметь_стоимость_пользования_услугой(?q,?s)"
-                + "->sqwrl:select(?x,?q,?s)^"
-                + "sqwrl:columnNames(\"Тариф\",\"Услуга\",\"Цена\")";
-
-        String message8 = "diplom:Тариф(?x)^diplom:Услуга(?q)^diplom:иметь_услугу(?x,?q)^diplom:иметь_количество_сообщений(?q,?t)^"
-                + "swrlb:lessThanOrEqual(?t," + messageData.getMinNumberMessage() + ")^"
-                + "diplom:иметь_цену_за_сообщения_абонентам_другого_оператора_Новосибирской_области(?x,?c)^"
-                + "diplom:иметь_цену_за_сообщения_абонентам_МТС_Новосибирской_области(?x,?c1) ^"
-                + "swrlb:add(?k, ?c, ?c1) ^ swrlb:divide(?mod, ?k, 2) ^ swrlb:subtract(?subs, ?c, ?mod) "
-                + "^ swrlb:abs(?abs, ?subs) ^ swrlb:add(?ans, ?mod, ?abs)^"
-                + "swrlb:subtract(?d," + messageData.getMinNumberMessage() + ",?t)^"
-                + "diplom:иметь_стоимость_пользования_услугой(?q,?s)^swrlb:multiply(?mult,?d,?ans)^"
-                + "swrlb:add(?sum,?s,?mult)"
-                + "->sqwrl:select(?x,?q,?sum)^"
-                + "sqwrl:columnNames(\"Тариф\",\"Услуга\",\"Цена\")";
-
-        try {
-            queryEngine.createSQWRLQuery("message1", message1);
-            queryEngine.createSQWRLQuery("message2", message2);
-            queryEngine.createSQWRLQuery("message3", message3);
-            queryEngine.createSQWRLQuery("message4", message4);
-            queryEngine.createSQWRLQuery("message5", message5);
-            queryEngine.createSQWRLQuery("message6", message6);
-            queryEngine.createSQWRLQuery("message7", message7);
-            queryEngine.createSQWRLQuery("message8", message8);
-
-//            queryEngine.deleteSWRLRule("my_rule");
-//            queryEngine.deleteSWRLRule("cost");
-//            queryEngine.deleteSWRLRule("cost1");
-//            queryEngine.deleteSWRLRule("cost2");
-//            queryEngine.deleteSWRLRule("cost3");
-//            queryEngine.deleteSWRLRule("coas4");
-//            queryEngine.deleteSWRLRule("coas5");
-//            queryEngine.deleteSWRLRule("coas6");
-//            queryEngine.deleteSWRLRule("coast7");
-            saveOntology();
-        } catch (SWRLParseException | SWRLBuiltInException ex) {
-            ex.printStackTrace();
+    private void generateQueryMessage(MessageData messageData) {
+        SqwrlGenerator generator = new SqwrlGenerator();
+        List<String> listMessageQuery = generator.generateMessageQuery(messageData.getMinNumberMessage(), messageData.getMaxNumberMessage());
+        for (int i = 0; i < listMessageQuery.size(); i++) {
+            String name = "message_" + String.valueOf(i + 1);
+            try {
+                queryEngine.createSQWRLQuery(name, listMessageQuery.get(i));
+            } catch (SWRLParseException | SQWRLException ex) {
+                ex.printStackTrace();
+            }
         }
+        saveOntology();
     }
 
-    private void convertCallData(CallData callData) {
-        String call1 = "diplom:Тариф(?x)^"
-                + "diplom:иметь_звонки_в_Новосибирскую_область(?x,?y) ^ diplom:иметь_время_звонков_в_минутах(?y,?t)"
-                + "swrlb:greaterThanOrEqual(?t," + callData.getMinNumberCall() + ")^"
-                + "swrlb:lessThanOrEqual(?t," + callData.getMaxNumberCall() + ")^"
-                + "diplom:иметь_абонентскую_плату_в_месяц_в_рублях(?x,?s)->sqwrl:select(?x,?s)^ "
-                + "sqwrl:columnNames(\"Тариф\",\"Абонентская плата\")";
-
-        String call2 = "diplom:Тариф(?x)^"
-                + "diplom:иметь_звонки_в_Новосибирскую_область(?x,?y) ^ diplom:иметь_время_звонков_в_минутах(?y,?t)"
-                + "swrlb:lessThanOrEqual(?t," + callData.getMinNumberCall() + ")^"
-                + "swrlb:subtract(?d," + callData.getMinNumberCall() + ",?t)^"
-                + "diplom:иметь_цену_за_минуту_звонка_абонентам_МТС_Новосибирской_области(?x,?c)^"
-                + "diplom:иметь_цену_за_минуту_звонка_абонентам_другого_оператора_Новосибирской_области(?x,?c1) ^"
-                + "diplom:иметь_абонентскую_плату_в_месяц_в_рублях(?x,?s)^ "
-                + "swrlb:add(?k, ?c, ?c1) ^ swrlb:divide(?mod, ?k, 2) ^ swrlb:subtract(?subs, ?c, ?mod) "
-                + "^ swrlb:abs(?abs, ?subs) ^ swrlb:add(?ans, ?mod, ?abs)"
-                + "^swrlb:multiply(?mult,?d,?ans)^"
-                + "->sqwrl:select(?x,?mult,?s)^"
-                + "sqwrl:columnNames(\"Тариф\",\"Цена\",\"Абонентская плата\")";
-
-        String call3 = "diplom:Тариф(?x)^"
-                + "diplom:иметь_звонки_в_Новосибирскую_область(?x,?y) ^ diplom:иметь_время_звонков_в_минутах(?y,?t)"
-                + "swrlb:lessThanOrEqual(?t," + callData.getMinNumberCall() + ")^"
-                + "swrlb:subtract(?d," + callData.getMinNumberCall() + ",?t)^"
-                + "diplom:иметь_цену_за_минуту_звонка_абонентам_МТС_Новосибирской_области(?x,?c)^"
-                + "diplom:иметь_цену_за_минуту_звонка_абонентам_другого_оператора_Новосибирской_области(?x,?c1) ^"
-                + "diplom:иметь_абонентскую_плату_в_день_в_рублях(?x,?s)^"
-                + "swrlb:add(?k, ?c, ?c1) ^ swrlb:divide(?mod, ?k, 2) ^ swrlb:subtract(?subs, ?c, ?mod) "
-                + "^ swrlb:abs(?abs, ?subs) ^ swrlb:add(?ans, ?mod, ?abs)"
-                + "^swrlb:multiply(?mult,?d,?ans)^"
-                + "swrlb:multiply(?m,?s,30)^"
-                + "->sqwrl:select(?x,?mult,?m)^"
-                + "sqwrl:columnNames(\"Тариф\",\"Цена\",\"Абонентская плата\")";
-
-        String call4 = "diplom:Тариф(?x)^"
-                + "diplom:иметь_звонки_в_Новосибирскую_область(?x,?y) ^ diplom:иметь_время_звонков_в_минутах(?y,?t)"
-                + "swrlb:lessThanOrEqual(?t," + callData.getMinNumberCall() + ")^"
-                + "swrlb:subtract(?d," + callData.getMinNumberCall() + ",?t)^"
-                + "diplom:иметь_цену_за_минуту_звонка_абонентам_МТС_Новосибирской_области(?x,?c)^"
-                + "diplom:иметь_цену_за_минуту_звонка_абонентам_другого_оператора_Новосибирской_области(?x,?c1) ^"
-                + "diplom:иметь_абонентскую_плату_в_день_в_рублях(?x,?s)^"
-                + "swrlb:add(?k, ?c, ?c1) ^ swrlb:divide(?mod, ?k, 2) ^ swrlb:subtract(?subs, ?c, ?mod) "
-                + "^ swrlb:abs(?abs, ?subs) ^ swrlb:add(?ans, ?mod, ?abs)"
-                + "^swrlb:multiply(?mult,?d,?ans)^"
-                + "swrlb:multiply(?m,?s,30)^"
-                + "->sqwrl:select(?x,?mult,?m)^"
-                + "sqwrl:columnNames(\"Тариф\",\"Цена\",\"Абонентская плата\")";
-
-        String call5 = "diplom:Тариф(?x)^"
-                + "diplom:иметь_цену_за_минуту_звонка_абонентам_МТС_Новосибирской_области(?x,?c)^"
-                + "diplom:иметь_цену_за_минуту_звонка_абонентам_другого_оператора_Новосибирской_области(?x,?c1) ^"
-                + "swrlb:add(?k, ?c, ?c1) ^ swrlb:divide(?mod, ?k, 2) ^ swrlb:subtract(?subs, ?c, ?mod) "
-                + "^ swrlb:abs(?abs, ?subs) ^ swrlb:add(?ans, ?mod, ?abs)"
-                + "^swrlb:multiply(?mult," + callData.getMinNumberCall() + ",?ans)^"
-                + "->sqwrl:select(?x,?mult)^"
-                + "sqwrl:columnNames(\"Тариф\",\"Цена\")";
-
-        String call6 = "diplom:Тариф(?x)^diplom:Услуга(?q)^diplom:иметь_услугу(?x,?q)^diplom:иметь_время_звонков_в_минутах(?q,?t)^"
-                + "swrlb:greaterThanOrEqual(?t," + callData.getMinNumberCall() + ")^"
-                + "swrlb:lessThanOrEqual(?t," + callData.getMaxNumberCall() + ")^"
-                + "diplom:иметь_стоимость_пользования_услугой(?q,?s)"
-                + "->sqwrl:select(?x,?q,?s)^"
-                + "sqwrl:columnNames(\"Тариф\",\"Услуга\",\"Цена\")";
-
-        String call7 = "diplom:Тариф(?x)^diplom:Услуга(?q)^diplom:иметь_услугу(?x,?q)^diplom:иметь_время_звонков_в_минутах(?q,?t)^"
-                + "swrlb:greaterThanOrEqual(?t," + callData.getMinNumberCall() + ")^"
-                + "diplom:иметь_стоимость_пользования_услугой(?q,?s)"
-                + "->sqwrl:select(?x,?q,?s)^"
-                + "sqwrl:columnNames(\"Тариф\",\"Услуга\",\"Цена\")";
-
-        String call8 = "diplom:Тариф(?x)^diplom:Услуга(?q)^diplom:иметь_услугу(?x,?q)^diplom:иметь_время_звонков_в_минутах(?q,?t)^"
-                + "swrlb:lessThanOrEqual(?t," + callData.getMinNumberCall() + ")^"
-                + "diplom:иметь_цену_за_сообщения_абонентам_другого_оператора_Новосибирской_области(?x,?c)^"
-                + "diplom:иметь_цену_за_сообщения_абонентам_МТС_Новосибирской_области(?x,?c1) ^"
-                + "swrlb:add(?k, ?c, ?c1) ^ swrlb:divide(?mod, ?k, 2) ^ swrlb:subtract(?subs, ?c, ?mod) "
-                + "^ swrlb:abs(?abs, ?subs) ^ swrlb:add(?ans, ?mod, ?abs)^"
-                + "swrlb:subtract(?d," + callData.getMinNumberCall() + ",?t)^"
-                + "diplom:иметь_стоимость_пользования_услугой(?q,?s)^swrlb:multiply(?mult,?d,?ans)^"
-                + "swrlb:add(?sum,?s,?mult)"
-                + "->sqwrl:select(?x,?q,?sum)^"
-                + "sqwrl:columnNames(\"Тариф\",\"Услуга\",\"Цена\")";
-
-        try {
-            queryEngine.createSQWRLQuery("call1", call1);
-            queryEngine.createSQWRLQuery("call2", call2);
-            queryEngine.createSQWRLQuery("call3", call3);
-            queryEngine.createSQWRLQuery("call4", call4);
-            queryEngine.createSQWRLQuery("call5", call5);
-            queryEngine.createSQWRLQuery("call6", call6);
-            queryEngine.createSQWRLQuery("call7", call7);
-            queryEngine.createSQWRLQuery("call8", call8);
-            saveOntology();
-        } catch (SWRLParseException | SWRLBuiltInException ex) {
-            ex.printStackTrace();
+    private void generateQueryCall(CallData callData) {
+        SqwrlGenerator generator = new SqwrlGenerator();
+        List<String> listCallQuery = generator.generateCallQuery(callData.getMinNumberCall(), callData.getMaxNumberCall());
+        for (int i = 0; i < listCallQuery.size(); i++) {
+            String name = "call_" + String.valueOf(i + 1);
+            try {
+                queryEngine.createSQWRLQuery(name, listCallQuery.get(i));
+            } catch (SWRLParseException | SQWRLException ex) {
+                ex.printStackTrace();
+            }
         }
+        saveOntology();
+    }
+
+    private void convertInternetData(InternetData internetData) {
+
     }
 
     private OWLClass createNewClassWithProperty(String name, String prefix, String suffix, String subclass, String has) {
